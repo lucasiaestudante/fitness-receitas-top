@@ -44,8 +44,8 @@ function Home() {
         </p>
       </div>
       {/* 2. HERO SECTION */}
-      <section className="w-full py-12 md:py-20 px-6 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
-        <div className="flex-1 flex flex-col items-start text-left">
+      <section className="w-full py-12 md:py-20 px-8 md:px-12 max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10 md:gap-16">
+        <div className="flex-1 w-full min-w-0 flex flex-col items-start text-left">
           <div className="flex items-center gap-2 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide mb-6" style={{ backgroundColor: "rgba(0,216,74,0.12)", color: "#005c1f" }}>
             <span className="w-2 h-2 rounded-full animate-pulse" style={{ backgroundColor: "#009933" }}></span>
             Lançamento Oficial
@@ -63,7 +63,7 @@ function Home() {
           <div className="block md:hidden w-full overflow-hidden mb-8">
             <img src="/hero-image.png" alt="E-book Cover" className="w-full h-full object-cover block" />
           </div>
-          <Button className="text-white text-lg font-bold py-6 px-8 rounded-full shadow-lg transition-all hover:scale-105 mb-4 flex items-center gap-2" style={{ backgroundColor: "#00D84A", boxShadow: "0 10px 30px rgba(0,216,74,0.3)" }} onMouseEnter={e => (e.currentTarget.style.backgroundColor = "#00BF42")} onMouseLeave={e => (e.currentTarget.style.backgroundColor = "#00D84A")} onClick={() => document.getElementById("planos")?.scrollIntoView({ behavior: "smooth" })}>
+          <Button className="w-full md:w-auto text-white text-base md:text-lg font-bold py-6 px-8 rounded-full shadow-lg transition-all hover:scale-105 mb-4 flex items-center justify-center gap-2" style={{ backgroundColor: "#00D84A", boxShadow: "0 10px 30px rgba(0,216,74,0.3)" }} onMouseEnter={e => (e.currentTarget.style.backgroundColor = "#00BF42")} onMouseLeave={e => (e.currentTarget.style.backgroundColor = "#00D84A")} onClick={() => document.getElementById("planos")?.scrollIntoView({ behavior: "smooth" })}>
             Quero minhas +100 Receitas Agora <ArrowRight className="w-5 h-5" />
           </Button>
           <div className="flex items-center gap-4 mt-2">
@@ -94,7 +94,7 @@ function Home() {
         </div>
       </section>
       {/* 3. FEATURES SECTION */}
-      <section className="bg-gray-50 w-full py-20 px-6">
+      <section className="bg-gray-50 w-full py-20 px-8 md:px-12">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
@@ -126,7 +126,7 @@ function Home() {
         </div>
       </section>
       {/* 4. RECIPE SHOWCASE SECTION */}
-      <section className="w-full py-20 px-6 bg-white">
+      <section className="w-full py-20 px-8 md:px-12 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
@@ -200,7 +200,7 @@ function Home() {
         </div>
       </section>
       {/* 5. TESTIMONIALS SECTION */}
-      <section className="bg-gray-50 w-full py-20 px-6">
+      <section className="bg-gray-50 w-full py-20 px-8 md:px-12">
         <div className="max-w-6xl mx-auto">
           <div className="flex justify-center mb-6 text-yellow-400">
             {[1, 2, 3, 4, 5].map(i => <Star key={i} className="w-8 h-8 fill-current" />)}
@@ -235,7 +235,7 @@ function Home() {
         </div>
       </section>
       {/* 6. PRICING SECTION */}
-      <section id="planos" className="bg-[#111827] w-full py-24 px-6 relative overflow-hidden">
+      <section id="planos" className="bg-[#111827] w-full py-24 px-8 md:px-12 relative overflow-hidden">
         <div className="absolute top-0 right-0 -mt-20 -mr-20 w-96 h-96 rounded-full blur-[120px] opacity-10" style={{ backgroundColor: "#00D84A" }}></div>
         <div className="absolute bottom-0 left-0 -mb-20 -ml-20 w-96 h-96 bg-blue-500 rounded-full blur-[120px] opacity-10"></div>
         
@@ -328,7 +328,7 @@ function Home() {
         </div>
       </section>
       {/* 7. GUARANTEE SECTION */}
-      <section className="bg-gray-100 w-full py-20 px-6">
+      <section className="bg-gray-100 w-full py-20 px-8 md:px-12">
         <div className="max-w-3xl mx-auto text-center">
           <div className="w-24 h-24 mx-auto rounded-full flex items-center justify-center mb-8 relative" style={{ backgroundColor: "rgba(0,216,74,0.12)" }}>
             <ShieldCheck className="w-12 h-12" style={{ color: "#009933" }} />
@@ -345,7 +345,7 @@ function Home() {
         </div>
       </section>
       {/* 8. FAQ SECTION */}
-      <section className="w-full py-20 px-6 bg-white">
+      <section className="w-full py-20 px-8 md:px-12 bg-white">
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-black text-gray-900 mb-4">
@@ -385,7 +385,7 @@ function Home() {
         </div>
       </section>
       {/* 9. CTA SECTION */}
-      <section className="w-full py-20 px-6 text-center relative overflow-hidden" style={{ backgroundColor: "#009933" }}>
+      <section className="w-full py-20 px-8 md:px-12 text-center relative overflow-hidden" style={{ backgroundColor: "#009933" }}>
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10"></div>
         <div className="max-w-4xl mx-auto relative z-10">
           <h2 className="text-4xl md:text-5xl font-black text-white mb-6 leading-tight">
@@ -406,7 +406,7 @@ function Home() {
         </div>
       </section>
       {/* 10. FOOTER */}
-      <footer className="bg-black w-full py-8 px-6 text-center">
+      <footer className="bg-black w-full py-8 px-8 md:px-12 text-center">
         <p className="text-gray-500 text-sm">
           © 2026 +100 Receitas Fitness. Todos os direitos reservados.
         </p>

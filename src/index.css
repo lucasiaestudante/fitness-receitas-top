@@ -220,6 +220,7 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   * {
@@ -228,6 +229,7 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+    overflow-x: hidden;
   }
 }
 
