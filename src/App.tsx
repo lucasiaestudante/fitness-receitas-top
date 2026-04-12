@@ -242,72 +242,37 @@ function Home() {
         <div className="max-w-5xl mx-auto relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-black text-white mb-4 tracking-tight">
-              Escolha o melhor plano para você
+              Sua transformação começa com uma única decisão
             </h2>
             <p className="text-xl text-gray-400">
-              Pagamento único. Acesso vitalício. Risco zero.
+              Acesso imediato. Pagamento único. Sem mensalidade. Sem desculpa.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-4xl mx-auto">
-            {/* LEFT — Oferta Básica */}
-            <div className="bg-[#1f2937] rounded-3xl p-8 md:p-10 border border-gray-700 shadow-xl">
-              <h3 className="text-2xl font-bold text-white mb-2">Oferta Básica</h3>
-              <p className="text-gray-400 mb-6">O essencial para começar</p>
-              <div className="mb-8">
-                <span className="text-gray-500 line-through text-lg block mb-1">De R$47,00 por apenas</span>
-                <div className="flex items-baseline gap-1 text-white">
-                  <span className="text-2xl font-bold">R$</span>
-                  <span className="text-5xl font-black">10</span>
-                  <span className="text-gray-400 text-sm">/único</span>
-                </div>
-              </div>
-              
-              <ul className="space-y-4 mb-10">
-                {[
-                  "+100 Receitas Fitness",
-                  "Divididas por tipo de refeição",
-                  "Cronograma alimentar básico",
-                  "Acesso vitalício",
-                  "Atualizações gratuitas",
-                  "Entrega imediata por e-mail"
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-3 text-gray-300">
-                    <CheckCircle2 className="w-5 h-5 shrink-0 mt-0.5" style={{ color: "#00D84A" }} />
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-              
-              <Button className="w-full bg-transparent border-2 border-gray-600 hover:border-white text-white py-6 rounded-xl font-bold text-lg transition-colors" onClick={() => window.open("https://www.ggcheckout.com/checkout/v2/hyogZgGRlQ45uO1Yv9wP", "_blank")}>QUERO COMPRAR</Button>
-            </div>
 
-            {/* RIGHT — Oferta Premium */}
-            <div className="bg-[#1f2937] rounded-3xl p-8 md:p-10 border-2 shadow-2xl relative transform md:-translate-y-4" style={{ borderColor: "#00D84A", boxShadow: "0 25px 50px rgba(0,61,23,0.2)" }}>
-              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-yellow-400 text-yellow-950 px-4 py-1 rounded-full text-xs font-black tracking-widest uppercase">
-                Mais Escolhido
+          <div className="flex justify-center">
+            <div className="bg-[#1f2937] rounded-3xl p-8 md:p-10 border-2 shadow-2xl relative w-full max-w-md" style={{ borderColor: "#00D84A", boxShadow: "0 25px 50px rgba(0,61,23,0.2)" }}>
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 px-4 py-1 rounded-full text-xs font-black tracking-widest uppercase text-yellow-950" style={{ backgroundColor: "#FFD700" }}>
+                Oferta Exclusiva
               </div>
-              <h3 className="text-2xl font-bold mb-2" style={{ color: "#00D84A" }}>Oferta Premium</h3>
-              <p className="text-gray-400 mb-6">O pacote completo para acelerar resultados</p>
+              <p className="text-gray-400 mb-6 mt-2">O pacote completo para transformar sua alimentação</p>
               <div className="mb-8">
                 <span className="text-gray-500 line-through text-lg block mb-1">De R$97,00 por apenas</span>
                 <div className="flex items-baseline gap-1 text-white">
                   <span className="text-2xl font-bold">R$</span>
-                  <span className="text-6xl font-black">17</span>
+                  <span className="text-6xl font-black">10</span>
                   <span className="text-gray-400 text-sm">/único</span>
                 </div>
-                <span className="text-sm font-semibold mt-2 inline-block animate-pulse" style={{ color: "#00D84A" }}>⏰ Por tempo limitado</span>
+                <span className="text-sm font-semibold mt-2 inline-block animate-pulse" style={{ color: "#00D84A" }}>🔥 Por tempo limitado</span>
               </div>
-              
+
               <ul className="space-y-4 mb-10">
                 {[
                   "+100 Receitas Fitness",
                   "Divididas por tipo de refeição",
                   "Acesso vitalício & Atualizações",
                   "Entrega imediata por e-mail",
-                  <span key="1" className="font-bold text-white">Cronograma alimentar completo</span>,
-                  <span key="2" className="font-bold text-white">Plano de organização semanal</span>,
-                  <span key="3" className="font-bold text-white">Lista de substituições inteligente</span>
+                  "Cronograma alimentar completo",
+                  "Plano de organização semanal",
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3 text-gray-300">
                     <CheckCircle2 className="w-5 h-5 shrink-0 mt-0.5" style={{ color: "#00D84A" }} />
@@ -315,7 +280,7 @@ function Home() {
                   </li>
                 ))}
               </ul>
-              
+
               <Button
                 className="w-full text-white py-6 rounded-xl font-bold text-lg transition-all hover:scale-[1.02]"
                 style={{ backgroundColor: "#00D84A", boxShadow: "0 10px 30px rgba(0,216,74,0.25)" }}
